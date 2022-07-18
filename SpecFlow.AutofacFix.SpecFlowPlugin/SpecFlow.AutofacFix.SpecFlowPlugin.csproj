@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net48</TargetFrameworks>
+    <AssemblyName>SpecFlow.AutofacFix.SpecFlowPlugin</AssemblyName>
+  </PropertyGroup>
+
+	<!--<_SpecFlow_AutofacFixPluginFramework Condition=" '$(TargetFrameworkIdentifier)' == '.NETCoreApp' ">netstandard2.0</_SpecFlow_AutofacFixPluginFramework>
+	<_SpecFlow_AutofacFixPluginFramework Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework' ">net461</_SpecFlow_AutofacFixPluginFramework>
+	<_SpecFlow_AutofacFixPluginPath>$(MSBuildThisFileDirectory)\..\lib\$(_SpecFlow_AutofacFixPluginFramework)\SpecFlow.AutofacFix.SpecFlowPlugin.dll</_SpecFlow_AutofacFixPluginPath>-->
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.Autofac" Version="3.9.74" />
+  </ItemGroup>
+
+</Project>
